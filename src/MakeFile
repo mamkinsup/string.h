@@ -1,0 +1,39 @@
+strlen_tests:Quest_1
+Quest_1: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_1
+
+s21_string_test.o: s21_string_test.c s21_string.h
+	gcc -Wall -Wextra -Werror s21_string_test.c s21_string.h -c
+
+s21_string.o: s21_string.c s21_string.h
+	gcc -Wall -Wextra -Werror s21_string.c s21_string.h -c
+
+clean:
+	rm -rf *.o
+	rm -rf *.gch
+
+rebuild: clean strlen_tests
+
+strcmp_tests:Quest_2
+Quest_2: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_2
+
+strcpy_tests:Quest_3
+Quest_3: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_3
+
+strcat_tests:Quest_4
+Quest_4: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_4
+
+strchr_tests:Quest_5
+Quest_5: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_5
+
+strstr_tests:Quest_6
+Quest_6: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_6
+
+strtok_tests:Quest_7
+Quest_7: s21_string_test.o s21_string.o
+	gcc -Wall -Wextra -Werror s21_string_test.o s21_string.o -o ../build/Quest_7
